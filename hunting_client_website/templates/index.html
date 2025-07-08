@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to Hunting Client{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-crosshairs"></i>
+                Welcome to Hunting Client
+            </h1>
+            <p class="hero-subtitle">Your ultimate gaming companion</p>
+            
+            <div class="social-buttons">
+                <a href="https://youtube.com/@yourchannel" target="_blank" class="social-btn youtube-btn">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </a>
+                <a href="https://discord.gg/yourserver" target="_blank" class="social-btn discord-btn">
+                    <i class="fab fa-discord"></i>
+                    Discord
+                </a>
+                <a href="https://kick.com/yourchannel" target="_blank" class="social-btn kick-btn">
+                    <i class="fas fa-play"></i>
+                    Kick
+                </a>
+            </div>
+            
+            <div class="comment-section-link">
+                <a href="{{ url_for('comments') }}" class="comment-btn">
+                    <i class="fas fa-comments"></i>
+                    Leave a Comment
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="floating-element element-1">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fas fa-target"></i>
+                </div>
+                <div class="floating-element element-4">
+                    <i class="fas fa-bolt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-section">
+    <div class="about-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to my gaming world! I'm passionate about creating the best gaming experiences and sharing them with the community.</p>
+                <p>Join me on my social channels for:</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check"></i> Latest gaming content and tutorials</li>
+                    <li><i class="fas fa-check"></i> Live streams and community events</li>
+                    <li><i class="fas fa-check"></i> Gaming tips and tricks</li>
+                    <li><i class="fas fa-check"></i> Community discussions and feedback</li>
+                </ul>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Subscribers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features-section">
+    <div class="features-container">
+        <h2 class="section-title">Why Choose Hunting Client?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>High Performance</h3>
+                <p>Optimized for maximum gaming performance and smooth experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure & Safe</h3>
+                <p>Built with security in mind to protect your gaming experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Driven</h3>
+                <p>Join our active community of gamers and enthusiasts.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
